@@ -5,19 +5,24 @@ Note Keeper application developed using React. This app is used to take notes. I
 ## Steps
 
 1. Clone the repository
+
 ```
 https://github.com/EziOPratikk/Note-Keeper.git
 ```
 
 2. Get node_modules
+
 ```
 npm install
 ```
 
 3. Run the project
+
 ```
 npm start
 ```
 
 ## Screenshots
 
+<img src='src/images/screenshots/empty-note.png' style="display: block;"/>
+<img src='src/images/screenshots/filled-note.png' style="display: block;"/>
