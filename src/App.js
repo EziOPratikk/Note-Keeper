@@ -7,12 +7,15 @@ import Footer from './components/Footer';
 
 import icon from './images/sleeping.png';
 
+import Snackbar from '@mui/material/Snackbar';
+
 function App() {
   const [noteList, setNoteList] = useState([]);
   const [note, setNote] = useState({
     title: '',
     content: '',
   });
+  const [isSnackbarOpen, setIsSnackbarOpen] = useState(false);
 
   function inputNoteHandler(event) {
     const newValue = event.target.value;
@@ -41,6 +44,13 @@ function App() {
     const filteredNotes = noteList.filter((_, index) => {
       return index !== id;
     });
+
+    setIsSnackbarOpen(true);
+
+    setTimeout(() => {
+      setIsSnackbarOpen(false);
+    }, 3000);
+
     setNoteList(filteredNotes);
   }
   return (
@@ -69,6 +79,17 @@ function App() {
           );
         })
       )}
+      <Snackbar
+        open={isSnackbarOpen}
+        message='Note removed'
+        ContentProps={{
+          sx: {
+            background: '#f5ba13;',
+            fontFamily: 'Montserrat',
+            fontWeight: 'bold',
+          },
+        }}
+      />
       <Footer />
     </div>
   );
