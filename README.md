@@ -24,5 +24,6 @@ npm start
 
 ## Screenshots
 
-<img src='src/images/screenshots/empty-note.png' style="display: block;"/>
-<img src='src/images/screenshots/filled-note.png' style="display: block;"/>
+<img src='src/images/screenshots/home-page.png' style="display: block;"/>
+<img src='src/images/screenshots/add-note.png' style="display: block;"/>
+<img src='src/images/screenshots/note-list.png' style="display: block;"/>
